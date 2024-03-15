@@ -1,0 +1,50 @@
+<!--///function based-->
+
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Title</title>-->
+<!--</head>-->
+<!--<body>-->
+
+<!--     <form action="" method="post">-->
+<!--     {% csrf_token %}-->
+<!--        <label for="">Name :</label>-->
+<!--        <input type="text" name="title" placeholder="Enter the book name" value="{{book.title}}">-->
+
+<!--        <label for=""> Author :</label>-->
+<!--        <input type="text" name="author" placeholder="Enter the book author" value="{{book.author}}">-->
+
+<!--        <label for="">Price :</label>-->
+<!--        <input type="text" name="price" placeholder="Enter the book price" value="{{book.price}}">-->
+
+<!--        <input type="submit" value="submit">-->
+
+<!--  </form>-->
+
+<!--</body>-->
+<!--</html>-->
+
+
+<!--///classbased_views-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+<form action="" method="post">
+
+    {% csrf_token %}
+
+    {{ form.as_p }}
+
+    <input type="submit" value="update">
+
+</form>
+</body>
+</html>
